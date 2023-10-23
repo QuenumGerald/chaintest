@@ -1,0 +1,12 @@
+syntax = "proto3";
+package chaintest.chaintest;
+
+import "gogoproto/gogo.proto";
+import "chaintest/chaintest/params.proto";
+
+option go_package = "chaintest/x/chaintest/types";
+
+// GenesisState defines the chaintest module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
