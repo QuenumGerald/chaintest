@@ -3,14 +3,14 @@ accounts:
 - name: alice
   coins:
   - 20000token
-  - 200000000stake
+  - 200000000lords
 - name: bob
   coins:
   - 10000token
-  - 100000000stake
+  - 100000000lords
 client:
   openapi:
     path: docs/static/openapi.yml
 validators:
 - name: alice
-  bonded: 100000000stake
+  bonded: 100000000lords
